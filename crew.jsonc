@@ -1,0 +1,46 @@
+{
+  "name": "govnotify_agent",
+  "agents": ["government_job_data_scout"],
+  "memory": false,
+  "process": "sequential",
+  "verbose": true,
+  "tasks": [
+    {
+      "name": "search_karnataka_jobs",
+      "description": "Search for currently open government jobs in Karnataka and list the results on the screen.",
+      "expected_output": "A numbered list of open Karnataka jobs. Include Job Title, Organization, and Official Link.",
+      "agent": "government_job_data_scout"
+    },
+    {
+      "name": "search_tamil_nadu_jobs",
+      "description": "Search for currently open government jobs in Tamil Nadu and list the results on the screen.",
+      "expected_output": "A numbered list of open Tamil Nadu jobs. Include Job Title, Organization, and Official Link.",
+      "agent": "government_job_data_scout"
+    },
+    {
+      "name": "search_kerala_jobs",
+      "description": "Search for currently open government jobs in Kerala and list the results on the screen.",
+      "expected_output": "A numbered list of open Kerala jobs. Include Job Title, Organization, and Official Link.",
+      "agent": "government_job_data_scout"
+    },
+    {
+      "name": "search_andhra_jobs",
+      "description": "Search for currently open government jobs in Andhra Pradesh and list the results on the screen.",
+      "expected_output": "A numbered list of open Andhra Pradesh jobs. Include Job Title, Organization, and Official Link.",
+      "agent": "government_job_data_scout"
+    },
+    {
+      "name": "search_telangana_jobs",
+      "description": "Search for currently open government jobs in Telangana and list the results on the screen.",
+      "expected_output": "A numbered list of open Telangana jobs. Include Job Title, Organization, and Official Link.",
+      "agent": "government_job_data_scout"
+    },
+    {
+      "name": "search_central_jobs",
+      "description": "Search for currently open Central Government jobs (SSC, UPSC, RRB) and list the results on the screen.",
+      "expected_output": "A numbered list of open Central Government jobs. Include Job Title, Organization, and Official Link.",
+      "agent": "government_job_data_scout"
+    }
+  ],
+  "inputs": {}
+}
