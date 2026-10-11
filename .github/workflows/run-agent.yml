@@ -43,4 +43,5 @@ jobs:
           DB_SSL: ${{ secrets.DB_SSL }}
         run: |
           python run_states.py
+          python run_central.py
           python auto_upload.py
